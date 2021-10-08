@@ -7,15 +7,14 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-            /* background-color: red; */
+            background-color: green;
         }
 
-        .flex-container>div {
-            /*div children of the flex container*/
-            background-color: #f1f1f1;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
+        body, html {
+            background-color: green;
+        }
+        img {
+            background-color: rgb(128, 67, 18);
         }
     </style>
     <meta charset="utf-8">
@@ -34,15 +33,6 @@
 
     <div class="container-fluid">
         <h1>Animal hunt Aaron</h1>
-
-
-        <!-- <div class="container">
-  <button type="button" class="btn btn-success btn-sm">Success in all things is my goal</button>
-  <button type="button" class="btn btn-warning  btn-sm">Warning danger ahead</button>
-  <button type="button" class="btn btn-danger btn-sm">Danger, can still go back</button>
-  <button type="button" class="btn btn-link btn-sm">Link to the secret of life</button>
-  </div> -->
-
         <p>Click on the squares to search for wildlife</p>
         <p>Number of triesis: <span id="tries">0</span>.</p>
         <p>Distance is <span id="distance">unknown</span></p>
@@ -64,8 +54,8 @@
                     innerDiv.id = `column${j}`;
                     let img = document.createElement('img');
                     img.src = "Flowering_Azalea_JE2_BE2.webp"
-                    img.height = 50
-                    img.width = 50
+                    img.height = 100
+                    img.width = 100
                     img.id = `${i}${j}`
                     img.onclick = check
                     // img.addEventListener('click', () => check(`${i}${j}`))
