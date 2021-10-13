@@ -42,6 +42,8 @@
     </p>
     <input id="input" type="text" />
     <button onclick="makeNewDiv()">Push value</button>
+    <button onclick="zap()">Zap</button>
+    <button onclick="popItem()">Pop</button>
 
 
 </body>
@@ -55,7 +57,23 @@
 
         /* add it to the container */
         document.getElementById('target').appendChild(element)
+    }
 
+    function popItem() {
+        let stack = document.getElementsByClassName('stack')
+        if (stack.length > 0) {
+            stack[stack.length - 1].remove()
+        }
+    }
+
+    function zap() {
+        let stack = document.getElementsByClassName('stack')
+        let zapped = document.getElementById('input').value
+        Array.from(stack).forEach((el, idx) => {
+            if (el.innerHTML === zapped) {
+                stack[idx].remove()
+            }
+        })
     }
 </script>
 
