@@ -6,4 +6,4 @@ An assignment on java script modifying the DOM and using anonymous callback func
 
 [reaction](https://44-563-webapps-f21.github.io/webapps-f21-assignment-7-Aaron-Bopp/reaction.html)
 
-[timeout](https://44-563-webapps-f21.github.io/webapps-f21-assignment-7-Aaron-Bopp/timeout.html)
+[search](https://44-563-webapps-f21.github.io/webapps-f21-assignment-7-Aaron-Bopp/search.html)
